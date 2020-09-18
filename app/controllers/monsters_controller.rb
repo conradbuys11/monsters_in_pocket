@@ -17,7 +17,8 @@ class MonstersController < ApplicationController
             affinity: params[:monster][:affinity],
             bio: params[:monster][:bio],
             strength: params[:monster][:strength],
-            health: params[:monster][:health]
+            health: params[:monster][:health],
+            pic: params[:monster][:pic]
         )
         redirect_to monster_path(monster)
     end
@@ -33,7 +34,8 @@ class MonstersController < ApplicationController
             affinity: params[:monster][:affinity],
             bio: params[:monster][:bio],
             strength: params[:monster][:strength],
-            health: params[:monster][:health]
+            health: params[:monster][:health],
+            pic: params[:monster][:pic]
         )
         redirect_to monster_path(monster)
     end

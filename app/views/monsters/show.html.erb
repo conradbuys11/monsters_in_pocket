@@ -1,5 +1,9 @@
 <h1><%= @monster.name %> Monster!!! </h1>
-
+<% if @monster.pic == nil %>
+    There is no picture
+<% else %>
+    <%= image_tag @monster.pic  %>
+<% end %>
 <ul>
     <li><%= @monster.bio %></li>
     <li>Affinity: <%= @monster.affinity %></li>

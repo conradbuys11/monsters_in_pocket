@@ -12,7 +12,8 @@ Monster.create(
     affinity: "Earth",
     strength: 300,
     health: 300,
-    bio: "This dinosaur digs"
+    bio: "This dinosaur digs", 
+    pic: nil
 )
 
 Monster.create(
@@ -20,5 +21,6 @@ Monster.create(
     affinity: "Wet",
     strength: 200,
     health: 500,
-    bio: "The gator who is fat"
+    bio: "The gator who is fat", 
+    pic: "https://i.imgur.com/BHTXFI1.png"
 )
