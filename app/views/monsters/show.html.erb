@@ -1,0 +1,9 @@
+<h1><%= @monster.name %> Monster!!! </h1>
+<ul>
+    <li><%= @monster.bio %></li>
+    <li>Affinity: <%= @monster.affinity %></li>
+    <li>Strength: <%= @monster.strength %></li>
+    <li>Health: <%= @monster.health %></li>
+</ul>
+
+<%= link_to("All Monsters", monsters_path) %>

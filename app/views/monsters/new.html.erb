@@ -1,0 +1,20 @@
+<h1>CREATE a NEW MONSTER!!!!</h1>
+<%= form_for(@monster) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br>
+    <%= f.label :bio %>
+    <%= f.text_field :bio %>
+    <br>
+    <%= f.label :affinity %>
+    <%= f.text_field :affinity %>
+    <br>
+    <%= f.label :strength %>
+    <%= f.text_field :strength %>
+    <br>
+    <%= f.label :health %>
+    <%= f.text_field :health %>
+    <br>
+    <br>
+    <%= f.submit "Create your MONSTER!!" %>
+<% end %>

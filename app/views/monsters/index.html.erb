@@ -1,0 +1,9 @@
+<h1>MONSTERS that RESIDE in YOUR POCKET!!</h1>
+<% @monsters.each do |monster| %>
+    <ul>
+    <li><%= link_to(monster.name, monster_path(monster)) %></li>
+    </ul>
+<% end %>
+<br>
+<br>
+<%= link_to("CREATE a NEW MONSTER!!", new_monster_path) %>
