@@ -1,0 +1,20 @@
+<h1> EDIT your MONSTER </h1>
+<%= form_for(@monster) do |f| %>
+   <%=f.label :name %>
+   <%= f.text_field :name %>
+   <br>
+   <%= f.label :bio %>
+   <%= f.text_field :bio %>
+   <br>
+   <%= f.label :affinity %>
+   <%= f.text_field :affinity %>
+   <br>
+   <%= f.label :strength %>
+   <%= f.number_field :strength %>
+   <br>
+   <%= f.label :health %>
+   <%= f.number_field :health %>
+   <br>
+   <br>
+   <%= f.submit "EDIT this MONSTER" %>
+   <% end %>

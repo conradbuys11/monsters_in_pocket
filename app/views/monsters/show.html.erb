@@ -1,4 +1,6 @@
 <h1><%= @monster.name %> Monster!!! </h1>
+<%= image_tag  %>
+
 <ul>
     <li><%= @monster.bio %></li>
     <li>Affinity: <%= @monster.affinity %></li>
@@ -6,4 +8,9 @@
     <li>Health: <%= @monster.health %></li>
 </ul>
 
+<%= button_to "EDIT your MONSTER", edit_monster_path(@monster), method: :get %>
+<br>
+<%= button_to "DELETE your MONSTER",  @monster, method: :delete, data: {confirm: "REALLY?"} %>
+<br>
+<br>
 <%= link_to("All Monsters", monsters_path) %>

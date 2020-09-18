@@ -27,9 +27,20 @@ class MonstersController < ApplicationController
     end
 
     def update
+        monster = Monster.find(params[:id])
+        monster.update(
+            name: params[:monster][:name],
+            affinity: params[:monster][:affinity],
+            bio: params[:monster][:bio],
+            strength: params[:monster][:strength],
+            health: params[:monster][:health]
+        )
+        redirect_to monster_path(monster)
     end
 
-    def delete
-        @monster = Monster.find(params[:id])
+    def destroy
+        monster = Monster.find(params[:id])
+        monster.destroy
+        redirect_to monsters_path
     end
 end
